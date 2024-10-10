@@ -1,30 +1,22 @@
-// 1. var
-// var는 함수 스코프를 가짐, 재선언과 재할당이 모두 가능
-var x = 10;
-console.log(x); // 10
+//배열 만들기 
+let alphabet = ["a", "b", "c", "d"];
+console.log(alphabet);
 
-x = 20; // 재할당 가능
-console.log(x); // 20
+//배열 특정 값 조회하기
+console.log(alphabet[0]);
 
-var x = 30; // 재선언 가능
-console.log(x); // 30
+//배열 특정 값 추가하기
+alphabet.push("e");
+console.log(alphabet);
 
+//배열 특정 값 삭제하기
+alphabet.splice(2, 2);
+console.log(alphabet);
 
-// 2. let
-// let은 블록 스코프를 가짐, 재할당은 가능하지만 재선언은 불가
-let y = 10;
-console.log(y); // 10
+//배열 특정 값 수정하기
+alphabet[0] = "z";
+console.log(alphabet);
 
-y = 20; // 재할당 가능
-console.log(y); // 20
-
-//let y = 30; // 같은 스코프 내에서 재선언 불가 (오류 발생)
-
-// 3. const
-// const는 블록 스코프를 가짐, 선언과 동시에 초기화해야 하며, 재할당 불가
-const z = 10;
-console.log(z); // 10
-
-// z = 20; // const 변수는 재할당 불가 (오류 발생)
-
-// const z = 30; // 재선언도 불가 (오류 발생)
+//map을 이용해서 배열의 특정 값 변경
+let sun = alphabet.map((a) => a === "a" ? "za" : a);
+console.log(sun);
