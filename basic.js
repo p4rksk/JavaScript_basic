@@ -1,30 +1,30 @@
-console.log("Hello World");
+// 1. var
+// var는 함수 스코프를 가짐, 재선언과 재할당이 모두 가능
+var x = 10;
+console.log(x); // 10
 
-// 숫자형 데이터 타입
-Number =  1;
-console.log(Number);
+x = 20; // 재할당 가능
+console.log(x); // 20
 
-Number = 2;
-console.log(Number);
+var x = 30; // 재선언 가능
+console.log(x); // 30
 
-Number = 1 + 2;
-console.log(Number);
 
-// String 데이터 타입
-String = "I am";
+// 2. let
+// let은 블록 스코프를 가짐, 재할당은 가능하지만 재선언은 불가
+let y = 10;
+console.log(y); // 10
 
-let myName = "SunKyu";
+y = 20; // 재할당 가능
+console.log(y); // 20
 
-console.log(String + " " + myName);
+//let y = 30; // 같은 스코프 내에서 재선언 불가 (오류 발생)
 
-// Boolean 데이터 타입
-const a = true;
-const b = false;
+// 3. const
+// const는 블록 스코프를 가짐, 선언과 동시에 초기화해야 하며, 재할당 불가
+const z = 10;
+console.log(z); // 10
 
-console.log(a && b); //&&은 관계연산자로 둘다 true일때 true를 반환
+// z = 20; // const 변수는 재할당 불가 (오류 발생)
 
-//Symbol 데이터 타입
-const sym1 = Symbol("sunkyu");
-const sym2 = Symbol("sunkyu");
-
-console.log(sym1 === sym2); //false 각각의 symbol로 생성되기 때문에 다른 값을 가진다.
+// const z = 30; // 재선언도 불가 (오류 발생)
