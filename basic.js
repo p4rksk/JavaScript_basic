@@ -1,22 +1,20 @@
-//배열 만들기 
-let alphabet = ["a", "b", "c", "d"];
-console.log(alphabet);
+// 객체 생성
+let star = {
+    name: "gangjun",
+    handsome: true,
+    rich: true
+};
 
-//배열 특정 값 조회하기
-console.log(alphabet[0]);
+// console.log(star);
+// //변경전 객체 값 출력
+// console.log(star.name);
+// console.log(star.handsome);
+// console.log(star.rich);
 
-//배열 특정 값 추가하기
-alphabet.push("e");
-console.log(alphabet);
+// star.name = "haein";
+// //변경후 객체 값 출력
+// console.log(star.name);
 
-//배열 특정 값 삭제하기
-alphabet.splice(2, 2);
-console.log(alphabet);
-
-//배열 특정 값 수정하기
-alphabet[0] = "z";
-console.log(alphabet);
-
-//map을 이용해서 배열의 특정 값 변경
-let sun = alphabet.map((a) => a === "a" ? "za" : a);
-console.log(sun);
+//객체의 프로퍼티 추가 
+star.lastName = "seo";
+console.log(star.lastName);
